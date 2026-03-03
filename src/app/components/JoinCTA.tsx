@@ -1,5 +1,5 @@
 import styles from "./JoinCTA.module.css";
-import { COMMUNITY_INVITE_URL, COMMUNITY_PLATFORM, MANIFESTO_URL } from "../config";
+import { COMMUNITY_INVITE_URL, COMMUNITY_PLATFORM } from "../config";
 
 export function JoinCTA() {
   return (
@@ -16,9 +16,6 @@ export function JoinCTA() {
             <div className="buttonRow">
               <a className="btn btnPrimary" href={COMMUNITY_INVITE_URL} target="_blank" rel="noreferrer">
                 Join on {COMMUNITY_PLATFORM}
-              </a>
-              <a className="btn" href={MANIFESTO_URL} target="_blank" rel="noreferrer">
-                Read the Manifesto
               </a>
             </div>
             <div className={styles.finePrint}>

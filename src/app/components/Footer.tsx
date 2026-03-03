@@ -1,5 +1,5 @@
 import styles from "./Footer.module.css";
-import { COMMUNITY_INVITE_URL, COMMUNITY_PLATFORM, MANIFESTO_URL } from "../config";
+import { COMMUNITY_INVITE_URL, COMMUNITY_PLATFORM } from "../config";
 
 export function Footer() {
   return (
@@ -13,9 +13,6 @@ export function Footer() {
           <nav className={styles.nav} aria-label="Footer">
             <a href={COMMUNITY_INVITE_URL} target="_blank" rel="noreferrer">
               Join on {COMMUNITY_PLATFORM}
-            </a>
-            <a href={MANIFESTO_URL} target="_blank" rel="noreferrer">
-              Read the Manifesto
             </a>
           </nav>
         </div>

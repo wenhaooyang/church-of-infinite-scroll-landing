@@ -4,7 +4,6 @@ export const hero = {
   subtitle:
     "We do not worship the Feed. We study it. A community for conscious scrolling, algorithmic introspection, and experiments in attention.",
   primaryCta: "Enter the Scroll",
-  secondaryCta: "Read the Manifesto",
 };
 
 export type CardItem = {
