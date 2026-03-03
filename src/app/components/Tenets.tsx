@@ -12,12 +12,12 @@ export function Tenets() {
           </p>
         </div>
 
-        <div className={styles.grid}>
+        <div className={styles.list}>
           {tenets.map((t) => (
-            <div key={t.title} className={`card ${styles.card}`}>
+            <article key={t.title} className={styles.item}>
               <h3 className={styles.title}>{t.title}</h3>
               <p className={styles.body}>{t.body}</p>
-            </div>
+            </article>
           ))}
         </div>
       </div>

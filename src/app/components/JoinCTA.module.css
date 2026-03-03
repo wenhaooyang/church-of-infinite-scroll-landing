@@ -9,10 +9,11 @@
   inset: -2px;
   pointer-events: none;
   background:
-    radial-gradient(700px 260px at 20% 10%, rgba(168, 85, 247, 0.30), transparent 60%),
-    radial-gradient(700px 260px at 80% 15%, rgba(34, 211, 238, 0.22), transparent 60%),
-    radial-gradient(700px 260px at 50% 100%, rgba(245, 158, 11, 0.12), transparent 65%);
-  opacity: 0.85;
+    radial-gradient(720px 280px at 15% 0%, rgba(168, 85, 247, 0.35), transparent 60%),
+    radial-gradient(720px 280px at 85% 10%, rgba(34, 211, 238, 0.30), transparent 60%),
+    radial-gradient(720px 320px at 50% 110%, rgba(245, 158, 11, 0.18), transparent 70%),
+    radial-gradient(circle at 50% 10%, rgba(15, 23, 42, 0.8), transparent 75%);
+  opacity: 0.95;
 }
 
 .inner {

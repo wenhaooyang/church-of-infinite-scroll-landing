@@ -19,7 +19,7 @@ export function CommunityExperience() {
             </div>
             <div className={styles.cards}>
               {rituals.map((r) => (
-                <div key={r.title} className={`card ${styles.card}`}>
+                <div key={r.title} className={styles.card}>
                   <div className={styles.cardTitle}>{r.title}</div>
                   <div className={styles.cardBody}>{r.body}</div>
                 </div>
@@ -32,7 +32,7 @@ export function CommunityExperience() {
             </div>
             <div className={styles.rolesGrid}>
               {roles.map((r) => (
-                <div key={r.title} className={`card ${styles.roleCard}`}>
+                <div key={r.title} className={styles.roleCard}>
                   <div className={styles.cardTitle}>{r.title}</div>
                   <div className={styles.cardBody}>{r.body}</div>
                 </div>
