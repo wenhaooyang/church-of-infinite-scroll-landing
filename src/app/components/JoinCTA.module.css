@@ -1,0 +1,41 @@
+.wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.wrap::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  pointer-events: none;
+  background:
+    radial-gradient(700px 260px at 20% 10%, rgba(168, 85, 247, 0.30), transparent 60%),
+    radial-gradient(700px 260px at 80% 15%, rgba(34, 211, 238, 0.22), transparent 60%),
+    radial-gradient(700px 260px at 50% 100%, rgba(245, 158, 11, 0.12), transparent 65%);
+  opacity: 0.85;
+}
+
+.inner {
+  position: relative;
+  padding: 22px;
+}
+
+.heading {
+  margin: 12px 0 8px;
+  font-size: clamp(30px, 4vw, 48px);
+  line-height: 1.08;
+  letter-spacing: -0.015em;
+}
+
+.copy {
+  margin: 0 0 18px;
+  color: rgba(243, 244, 255, 0.78);
+  max-width: 72ch;
+}
+
+.finePrint {
+  margin-top: 16px;
+  font-size: 13px;
+  color: rgba(243, 244, 255, 0.66);
+}
+

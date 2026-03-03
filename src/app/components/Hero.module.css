@@ -1,0 +1,41 @@
+.hero {
+  padding-top: 84px;
+  padding-bottom: 56px;
+}
+
+.inner {
+  max-width: 860px;
+}
+
+.title {
+  font-size: clamp(44px, 6vw, 76px);
+  line-height: 1.02;
+  margin: 18px 0 12px;
+  letter-spacing: -0.02em;
+}
+
+.subtitle {
+  color: rgba(243, 244, 255, 0.78);
+  font-size: clamp(16px, 2.2vw, 20px);
+  margin: 0 0 20px;
+  max-width: 70ch;
+}
+
+.ctaNote {
+  color: rgba(243, 244, 255, 0.72);
+  font-weight: 600;
+}
+
+.micro {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-top: 22px;
+  color: rgba(243, 244, 255, 0.72);
+}
+
+.microText {
+  font-size: 14px;
+}
+

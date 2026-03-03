@@ -1,0 +1,137 @@
+.header {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 22px;
+}
+
+.heading {
+  margin: 0;
+  font-size: clamp(26px, 3vw, 38px);
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+}
+
+.subheading {
+  margin: 0;
+  color: rgba(243, 244, 255, 0.74);
+  max-width: 70ch;
+}
+
+.grid {
+  display: grid;
+  gap: 16px;
+  align-items: start;
+}
+
+@media (min-width: 980px) {
+  .grid {
+    grid-template-columns: 1.35fr 0.65fr;
+    gap: 18px;
+  }
+}
+
+.left {
+  display: grid;
+  gap: 18px;
+}
+
+.cards {
+  display: grid;
+  gap: 12px;
+}
+
+@media (min-width: 760px) {
+  .cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+}
+
+.card {
+  padding: 14px 14px 16px;
+}
+
+.cardTitle {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: rgba(243, 244, 255, 0.9);
+  margin-bottom: 6px;
+}
+
+.cardBody {
+  font-size: 13.5px;
+  color: rgba(243, 244, 255, 0.72);
+}
+
+.rolesHeader {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.rolesNote {
+  font-size: 13px;
+  color: rgba(243, 244, 255, 0.68);
+}
+
+.rolesGrid {
+  display: grid;
+  gap: 12px;
+}
+
+@media (min-width: 760px) {
+  .rolesGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+  }
+}
+
+.roleCard {
+  padding: 14px 14px 16px;
+}
+
+.right {
+  overflow: hidden;
+}
+
+.asideInner {
+  padding: 16px;
+}
+
+.asideTitle {
+  margin: 0 0 10px;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: rgba(243, 244, 255, 0.78);
+}
+
+.list {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 8px;
+  color: rgba(243, 244, 255, 0.76);
+  font-size: 14px;
+}
+
+.divider {
+  height: 1px;
+  background: rgba(243, 244, 255, 0.12);
+  margin: 14px 0;
+}
+
+.creed {
+  margin: 0;
+  padding: 12px 12px;
+  border: 1px solid rgba(243, 244, 255, 0.12);
+  border-radius: 14px;
+  background: rgba(0, 0, 0, 0.16);
+  display: grid;
+  gap: 8px;
+  color: rgba(243, 244, 255, 0.82);
+  font-size: 14px;
+}
+
