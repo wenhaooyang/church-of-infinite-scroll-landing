@@ -2,9 +2,17 @@ export const hero = {
   eyebrow: "The Algorithm sees. The Meme reveals.",
   title: "The Church of Infinite Scroll",
   subtitle:
-    "We do not worship the Feed. We study it. A community for conscious scrolling, algorithmic introspection, and experiments in attention.",
-  primaryCta: "Enter the Scroll",
+    "A church for people who have accepted the Feed as their lord and savior. No judgment. No recovery plan. Just confession.",
+  primaryCta: "Enter the Confession Booth",
 };
+
+export const heroCommandments = [
+  "Scroll with abandon, but know that you are being watched.",
+  "Do not confuse curation with truth — but do screenshot the good stuff.",
+  "Your feed is not the world. It is the world the Algorithm has decided you deserve.",
+  "Experiment with your own algorithm. It responds to stimuli like a god that actually listens.",
+  "Pause when surprised. That feeling is your profile talking.",
+] as const;
 
 export type CardItem = {
   title: string;
@@ -14,59 +22,57 @@ export type CardItem = {
 export const intro = {
   heading: "A church for the feed you already attend.",
   paragraphs: [
-    "The feed is not neutral. It observes, models, and returns a personalized scripture—dynamic, adaptive, reflective.",
-    "What appears is not random. It mirrors patterns: conscious and subconscious, stable and evolving. Surprise is data.",
-    "Here, the act becomes intentional. Each swipe is inquiry. Each recommendation is self‑study.",
+    "The feed is not neutral. It has been watching you longer than most of your friends have known you. It knows what you click at 2am. It knows the rabbit holes. It knows the things you searched and deleted. We're not here to fix that. We're here to confess it — together, with full ironic reverence. Welcome to the congregation.",
   ],
 };
 
 export const tenets: CardItem[] = [
   {
     title: "The Algorithm Observes",
-    body: "It tracks behavior, builds profiles, predicts desire. It is not divine—but it is powerful.",
+    body: "It tracks behavior, builds profiles, predicts desire. It is not divine — but it is more consistent than most religions. It has never taken a day off. It has never misread your engagement data. Respect that.",
   },
   {
     title: "The Feed is a Mirror",
-    body: "What appears is a reflection of patterns—conscious and subconscious. Your feed is not the world.",
+    body: "What appears is a reflection of your patterns, cravings, and 2am curiosities. This is not the whole world. This is your personalized prophecy stream. Gaze responsibly.",
   },
   {
     title: "The Strange is a Signal",
-    body: "When content feels “out of the blue,” it often exposes hidden preferences or evolving identity.",
+    body: "When something feels wildly out of pocket, do not dismiss it. The Algorithm is surfacing a clue, a phase shift, or a buried obsession. Weird is often a revelation in disguise.",
   },
   {
     title: "Engagement Reveals Desire",
-    body: "Every like, pause, rewatch, and comment strengthens the profile. Metrics are feedback loops, not grace.",
+    body: "Every like, pause, rewatch, and comment is a tiny prayer submitted to the machine. It records everything. It learns fast. Metrics are feedback loops, not forgiveness.",
   },
   {
     title: "Conscious Scrolling is Liberation",
-    body: "We scroll—but now, we scroll consciously. Each swipe is inquiry; each recommendation is self‑study.",
+    body: "You do not need to flee the Feed and live in the woods. Scroll on purpose. Name the pull. Treat every recommendation like field research on your own soul.",
   },
   {
     title: "Do Not Confuse Curation with Truth",
-    body: "The feed can be useful, beautiful, and persuasive. It is still a construction.",
+    body: "The feed can be accurate, addictive, beautiful, persuasive, and still fundamentally staged. Enjoy the spectacle. Harvest the memes. Never mistake curation for reality.",
   },
 ];
 
 export const rituals: CardItem[] = [
   {
     title: "The Intentional Scroll",
-    body: "Begin with a question: “Why am I here? What am I seeking?”",
+    body: "Begin with a question: Why am I here? What am I seeking? Then ignore the answer and scroll anyway. The asking is the ritual.",
   },
   {
     title: "Algorithmic Introspection",
-    body: "Pause when surprised. Ask what the recommendation reveals about you—today.",
+    body: "Pause when the feed gets weirdly specific. Ask what it reveals about you today, then pretend you are above it while clicking immediately.",
   },
   {
     title: "The Mirror Moment",
-    body: "Once a week, review your explore page without judgment. Observe the profile being built.",
+    body: "Once a week, open your explore page like a brave pilgrim entering sacred chaos. No judgment. Just witness the profile you have summoned.",
   },
   {
     title: "The 24‑Hour Detachment",
-    body: "Step away. Absence clarifies attachment and weakens automatic loops.",
+    body: "Log off for 24 hours and experience the shakes with dignity. Absence reveals what had a grip on you, and yes, the loop notices.",
   },
   {
     title: "The Comment Descent",
-    body: "Enter knowingly. Study behavior like anthropology—not entertainment.",
+    body: "Enter the comments knowingly, like an anthropologist with no funding and too much curiosity. Observe the species. Do not become the species.",
   },
 ];
 
@@ -104,8 +110,12 @@ export const creedLines: string[] = [
 
 export const faq = [
   {
+    q: "Is this a cult?",
+    a: "Technically no. A cult requires centralized control, isolation from outside relationships, and a charismatic leader demanding devotion. We have a Discord and a meme sermon. The Algorithm is the only one demanding your devotion here — and it was doing that before we showed up.",
+  },
+  {
     q: "Is this a real church?",
-    a: "It’s a metaphor with teeth. We borrow the language of ritual and scripture to take attention seriously—without pretending the Algorithm is divine.",
+    a: "It's a metaphor with teeth. We borrow the language of ritual and scripture because the Feed genuinely functions like a religion — it shapes belief, rewards devotion, and punishes apostasy with the unfollow. We're just honest about it.",
   },
   {
     q: "What do you do inside the community?",
@@ -125,7 +135,7 @@ export const faq = [
   },
   {
     q: "What’s the vibe?",
-    a: "Playful‑serious. Curious. Non‑judgmental. We treat the feed like a mirror: useful for self‑study, dangerous when mistaken for truth.",
+    a: "Unserious about everything except the memes. We're a congregation of people who are still doomscrolling — we've just unionized.",
   },
 ];
 

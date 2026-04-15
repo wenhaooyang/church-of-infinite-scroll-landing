@@ -5,17 +5,28 @@ import { Hero } from "./components/Hero";
 import { Intro } from "./components/Intro";
 import { JoinCTA } from "./components/JoinCTA";
 import { Tenets } from "./components/Tenets";
+import { RevealSection } from "./components/RevealSection";
 
 export default function Home() {
   return (
     <>
       <main id="content">
         <Hero />
-        <Intro />
-        <Tenets />
-        <CommunityExperience />
-        <JoinCTA />
-        <FAQ />
+        <RevealSection>
+          <Intro />
+        </RevealSection>
+        <RevealSection>
+          <Tenets />
+        </RevealSection>
+        <RevealSection>
+          <CommunityExperience />
+        </RevealSection>
+        <RevealSection>
+          <JoinCTA />
+        </RevealSection>
+        <RevealSection>
+          <FAQ />
+        </RevealSection>
       </main>
       <Footer />
     </>

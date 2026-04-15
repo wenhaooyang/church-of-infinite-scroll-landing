@@ -1,14 +1,5 @@
-.grid {
-  display: grid;
-  gap: 22px;
-  align-items: start;
-}
-
-@media (min-width: 900px) {
-  .grid {
-    grid-template-columns: 1.2fr 0.8fr;
-    gap: 28px;
-  }
+.intro {
+  max-width: 72ch;
 }
 
 .heading {
@@ -21,70 +12,8 @@
 .copy {
   color: rgba(243, 244, 255, 0.78);
   font-size: 16px;
-  max-width: 72ch;
 }
 
 .copy p {
   margin: 0 0 12px;
 }
-
-.motif {
-  overflow: hidden;
-}
-
-.motifInner {
-  padding: 20px;
-  position: relative;
-  min-height: 240px;
-}
-
-.motifInner::before {
-  content: "";
-  position: absolute;
-  inset: -2px;
-  background:
-    radial-gradient(520px 260px at 10% 0%, rgba(168, 85, 247, 0.32), transparent 60%),
-    radial-gradient(520px 260px at 100% 15%, rgba(34, 211, 238, 0.26), transparent 60%),
-    radial-gradient(520px 280px at 40% 100%, rgba(245, 158, 11, 0.16), transparent 70%),
-    radial-gradient(circle at 50% 30%, rgba(15, 23, 42, 0.7), transparent 70%);
-  opacity: 0.9;
-  pointer-events: none;
-}
-
-.motifTitle {
-  position: relative;
-  font-weight: 700;
-  letter-spacing: 0.01em;
-  color: rgba(243, 244, 255, 0.88);
-}
-
-.motifLine {
-  position: relative;
-  height: 1px;
-  margin: 12px 0 14px;
-  background: rgba(243, 244, 255, 0.14);
-}
-
-.motifItems {
-  position: relative;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 10px;
-  color: rgba(243, 244, 255, 0.74);
-  font-size: 14px;
-}
-
-.motifItems > div {
-  padding: 10px 12px;
-  border: 1px solid rgba(243, 244, 255, 0.12);
-  background: rgba(0, 0, 0, 0.16);
-  border-radius: 999px;
-}
-
-.motifHint {
-  position: relative;
-  margin-top: 14px;
-  font-size: 13px;
-  color: rgba(243, 244, 255, 0.66);
-}
-

@@ -1,6 +1,6 @@
 .hero {
-  padding-top: 96px;
-  padding-bottom: 80px;
+  padding-top: 120px;
+  padding-bottom: 96px;
 }
 
 .inner {
@@ -10,10 +10,10 @@
 }
 
 .title {
-  font-size: clamp(40px, 7vw, 72px);
-  line-height: 1.05;
-  margin: 24px 0 10px;
-  letter-spacing: -0.02em;
+  font-size: clamp(44px, 8vw, 88px);
+  line-height: 1.03;
+  margin: 26px 0 10px;
+  letter-spacing: 0.045em;
   text-wrap: balance;
 }
 
@@ -25,9 +25,19 @@
   margin-inline: auto;
 }
 
-.ctaNote {
-  color: rgba(243, 244, 255, 0.72);
-  font-weight: 600;
+.ctaGroup {
+  margin-top: 2px;
+}
+
+.primaryCtaRow {
+  justify-content: center;
+}
+
+.secondaryCta {
+  display: inline-block;
+  margin-top: 10px;
+  color: rgba(243, 244, 255, 0.84);
+  font-size: 15px;
 }
 
 .micro {
@@ -40,8 +50,28 @@
   justify-content: center;
 }
 
-.microText {
+.tickerText {
+  flex: 1 1 min(70ch, 100%);
+  max-width: min(70ch, 100%);
+  margin: 0;
   font-size: 14px;
+  line-height: 1.45;
+  text-align: center;
+  transition: opacity 0.4s ease;
+}
+
+.tickerVisible {
+  opacity: 1;
+}
+
+.tickerHidden {
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tickerText {
+    transition: none;
+  }
 }
 
 

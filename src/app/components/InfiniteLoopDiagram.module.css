@@ -1,0 +1,154 @@
+.wrap {
+  width: 100%;
+  margin-top: 28px;
+}
+
+.title {
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: rgba(243, 244, 255, 0.88);
+  margin-bottom: 12px;
+}
+
+.line {
+  height: 1px;
+  margin-bottom: 16px;
+  background: rgba(243, 244, 255, 0.14);
+}
+
+.card {
+  overflow: hidden;
+  position: relative;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  background:
+    radial-gradient(520px 260px at 10% 0%, rgba(168, 85, 247, 0.32), transparent 60%),
+    radial-gradient(520px 260px at 100% 15%, rgba(34, 211, 238, 0.26), transparent 60%),
+    radial-gradient(520px 280px at 40% 100%, rgba(245, 158, 11, 0.16), transparent 70%),
+    radial-gradient(circle at 50% 30%, rgba(15, 23, 42, 0.7), transparent 70%);
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+.diagram {
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+  aspect-ratio: 1 / 1;
+  max-width: 100%;
+}
+
+.svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.spin {
+  transform-origin: 0 0;
+  animation: loopSpin 90s linear infinite;
+}
+
+.labelLayer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.nodeLabel {
+  position: absolute;
+  pointer-events: auto;
+  padding: 10px 14px;
+  border: 1px solid rgba(243, 244, 255, 0.14);
+  background: rgba(0, 0, 0, 0.28);
+  border-radius: 999px;
+  color: rgba(243, 244, 255, 0.82);
+  font-size: clamp(12px, 2.2vw, 14px);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  z-index: 1;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.labelTop {
+  top: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.labelRight {
+  right: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.labelBottom {
+  bottom: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: normal;
+  max-width: min(92%, 220px);
+  text-align: center;
+  line-height: 1.25;
+}
+
+.labelLeft {
+  left: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.pulse {
+  animation: labelPulse 1.15s ease;
+}
+
+.hint {
+  position: relative;
+  margin-top: 16px;
+  font-size: 13px;
+  color: rgba(243, 244, 255, 0.66);
+}
+
+.inner {
+  padding: 20px;
+  position: relative;
+}
+
+@keyframes loopSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes labelPulse {
+  0%,
+  100% {
+    border-color: rgba(243, 244, 255, 0.14);
+    box-shadow: 0 0 0 0 rgba(168, 85, 247, 0);
+  }
+  40% {
+    border-color: rgba(168, 85, 247, 0.55);
+    box-shadow: 0 0 22px 2px rgba(168, 85, 247, 0.22);
+  }
+  70% {
+    border-color: rgba(34, 211, 238, 0.35);
+    box-shadow: 0 0 18px 1px rgba(34, 211, 238, 0.18);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spin {
+    animation: none;
+  }
+
+  .pulse {
+    animation: none;
+  }
+}

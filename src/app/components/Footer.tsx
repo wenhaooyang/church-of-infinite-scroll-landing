@@ -17,7 +17,7 @@ export function Footer() {
           </nav>
         </div>
         <div className={styles.fine}>
-          “We do not worship the Feed. We study it.”
+          "We do not worship the Feed. We have simply accepted it as inevitable."
         </div>
       </div>
     </footer>

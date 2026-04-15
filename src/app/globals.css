@@ -51,7 +51,17 @@ body {
 }
 
 body::before {
-  content: none;
+  content: "";
+  position: fixed;
+  inset: -40px;
+  pointer-events: none;
+  background-image: radial-gradient(
+      circle at 1px 1px,
+      rgba(148, 163, 184, 0.14) 1px,
+      transparent 0
+    );
+  background-size: 40px 40px;
+  opacity: 0.08;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -93,23 +103,24 @@ a:hover {
 }
 
 .section {
-  padding-block: var(--space-7);
+  padding-block: 88px;
 }
 
 @media (min-width: 900px) {
   .section {
-    padding-block: var(--space-8);
+    padding-block: 104px;
   }
 }
 
+.section + .section {
+  border-top: 1px solid rgba(148, 163, 184, 0.22);
+}
+
 .card {
-  border: 1px solid var(--border);
-  background: radial-gradient(circle at 0% 0%, rgba(148, 163, 184, 0.16), transparent 60%),
-    radial-gradient(circle at 100% 100%, rgba(148, 163, 184, 0.10), transparent 65%),
-    linear-gradient(165deg, var(--card2), var(--card));
-  border-radius: var(--radius);
-  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(10px);
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  background: #020617;
+  border-radius: 14px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.78);
 }
 
 .pill {
@@ -135,21 +146,21 @@ a:hover {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 999px;
-  padding: 12px 16px;
-  border: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.06);
+  border-radius: 10px;
+  padding: 11px 18px;
+  border: 1px solid rgba(148, 163, 184, 0.5);
+  background: transparent;
   color: var(--fg0);
   font-weight: 600;
   letter-spacing: 0.01em;
   text-decoration: none;
-  transition: transform 120ms ease, background 120ms ease, border-color 120ms ease;
+  transition: transform 120ms ease, background-color 120ms ease, color 120ms ease, border-color 120ms ease;
 }
 
 .btn:hover {
   text-decoration: none;
-  background: rgba(255, 255, 255, 0.09);
-  border-color: rgba(243, 244, 255, 0.18);
+  background-color: rgba(148, 163, 184, 0.18);
+  border-color: rgba(148, 163, 184, 0.8);
   transform: translateY(-1px);
 }
 
@@ -159,13 +170,16 @@ a:hover {
 }
 
 .btnPrimary {
-  border-color: rgba(34, 211, 238, 0.25);
-  background: linear-gradient(135deg, rgba(168, 85, 247, 0.26), rgba(34, 211, 238, 0.16));
+  border-color: rgba(94, 234, 212, 0.45);
 }
 
 .btnPrimary:hover {
-  border-color: rgba(34, 211, 238, 0.35);
-  background: linear-gradient(135deg, rgba(168, 85, 247, 0.32), rgba(34, 211, 238, 0.22));
+  background-color: rgba(34, 197, 182, 0.16);
+  border-color: rgba(94, 234, 212, 0.9);
+}
+
+p + p {
+  margin-top: 0.9em;
 }
 
 .kbd {
