@@ -36,21 +36,14 @@
   min-height: 74svh;
   display: grid;
   align-content: center;
-  gap: 1.3rem;
-}
-
-.kicker {
-  margin: 0;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  font-size: 0.66rem;
-  color: rgba(214, 176, 87, 0.68);
+  gap: 1.45rem;
 }
 
 .headline {
   margin: 0;
-  font-size: clamp(2.4rem, 13vw, 5.4rem);
-  line-height: 0.95;
+  font-size: clamp(2.35rem, 12.5vw, 5.2rem);
+  line-height: 0.98;
+  letter-spacing: 0.01em;
   color: #d6b057;
   text-wrap: balance;
 }
@@ -79,7 +72,7 @@
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  font-size: 0.68rem;
+  font-size: 0.66rem;
   transition: background-color 280ms ease, border-color 280ms ease, color 280ms ease;
 }
 
@@ -163,11 +156,10 @@
 .reveal4,
 .reveal5,
 .reveal6,
-.reveal7,
-.reveal8 {
+.reveal7 {
   opacity: 0;
   transform: translateY(6px);
-  animation: reveal 1s ease forwards;
+  animation: reveal 1.05s ease forwards;
 }
 
 .reveal1 {
@@ -183,23 +175,19 @@
 }
 
 .reveal4 {
-  animation-delay: 760ms;
+  animation-delay: 820ms;
 }
 
 .reveal5 {
-  animation-delay: 980ms;
+  animation-delay: 1040ms;
 }
 
 .reveal6 {
-  animation-delay: 1140ms;
+  animation-delay: 1240ms;
 }
 
 .reveal7 {
-  animation-delay: 1300ms;
-}
-
-.reveal8 {
-  animation-delay: 1480ms;
+  animation-delay: 1440ms;
 }
 
 @keyframes reveal {
@@ -233,8 +221,7 @@
   .reveal4,
   .reveal5,
   .reveal6,
-  .reveal7,
-  .reveal8 {
+  .reveal7 {
     opacity: 1;
     transform: none;
     animation: none;

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Mono, UnifrakturMaguntia } from "next/font/google";
+import { IBM_Plex_Mono, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
 const ibmPlexMono = IBM_Plex_Mono({
@@ -9,10 +9,11 @@ const ibmPlexMono = IBM_Plex_Mono({
   weight: ["400", "500", "600"],
 });
 
-const unifrakturMaguntia = UnifrakturMaguntia({
+const playfairDisplay = Playfair_Display({
   subsets: ["latin"],
   variable: "--font-display",
-  weight: "400",
+  display: "swap",
+  weight: ["700", "800", "900"],
 });
 
 export const metadata: Metadata = {
@@ -43,7 +44,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${ibmPlexMono.variable} ${unifrakturMaguntia.variable}`}>
+      <body className={`${ibmPlexMono.variable} ${playfairDisplay.variable}`}>
         <a className="skipLink btn" href="#content">
           Skip to content
         </a>

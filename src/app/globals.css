@@ -191,6 +191,6 @@ p + p {
 }
 
 .display {
-  font-family: var(--font-display), "UnifrakturMaguntia", fantasy;
-  font-weight: 400;
+  font-family: var(--font-display), "Playfair Display", Georgia, "Times New Roman", serif;
+  font-weight: 800;
 }

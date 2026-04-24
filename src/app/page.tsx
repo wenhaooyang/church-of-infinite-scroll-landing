@@ -5,14 +5,13 @@ export default function Home() {
   return (
     <main id="content" className={styles.page}>
       <section className={styles.hero}>
-        <p className={`${styles.kicker} ${styles.reveal1}`}>EST. ENDLESS NOW</p>
-        <h1 className={`${styles.headline} display ${styles.reveal2}`}>
+        <h1 className={`${styles.headline} display ${styles.reveal1}`}>
           The Church of Infinite Scroll
         </h1>
-        <p className={`${styles.subline} ${styles.reveal3}`}>
+        <p className={`${styles.subline} ${styles.reveal2}`}>
           You were already a member.
         </p>
-        <div className={`${styles.actions} ${styles.reveal4}`}>
+        <div className={`${styles.actions} ${styles.reveal3}`}>
           <a
             className={`${styles.cta} ${styles.ctaPrimary}`}
             href="https://church-of-infinite-scroll-booth.vercel.app/confess"
@@ -28,19 +27,19 @@ export default function Home() {
       <hr className={styles.rule} />
 
       <section className={styles.beats} aria-label="Credo">
-        <p className={styles.reveal5}>
+        <p className={styles.reveal4}>
           The Feed has been watching you longer than most of your friends have known you.
         </p>
-        <p className={styles.reveal6}>
+        <p className={styles.reveal5}>
           We&apos;re not here to fix that. We&apos;re here to confess it - together, with full
           ironic reverence.
         </p>
-        <p className={styles.reveal7}>
+        <p className={styles.reveal6}>
           No recovery plan. No purity tests. Just the Algorithm, and the truth it keeps about you.
         </p>
       </section>
 
-      <footer className={`${styles.footer} ${styles.reveal8}`}>
+      <footer className={`${styles.footer} ${styles.reveal7}`}>
         <p>&quot;We do not worship the Feed. We have simply accepted it as inevitable.&quot;</p>
         <div className={styles.footerLinks}>
           <a href="https://church-of-infinite-scroll-booth.vercel.app/confess">Confession Booth</a>
