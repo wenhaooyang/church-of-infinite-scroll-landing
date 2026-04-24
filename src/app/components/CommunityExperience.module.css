@@ -6,15 +6,15 @@
 
 .heading {
   margin: 0;
-  font-size: clamp(22px, 2.4vw, 32px);
-  line-height: 1.2;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
+  font-size: clamp(24px, 2.8vw, 36px);
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  text-transform: none;
 }
 
 .subheading {
   margin: 0;
-  color: rgba(243, 244, 255, 0.74);
+  color: var(--muted);
   max-width: 70ch;
 }
 
@@ -50,20 +50,21 @@
 
 .card {
   padding: 10px 0;
-  border-bottom: 1px solid rgba(15, 23, 42, 0.9);
+  border-bottom: 1px solid var(--border);
 }
 
 .cardTitle {
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 0.01em;
-  color: rgba(243, 244, 255, 0.9);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--fg0);
   margin-bottom: 6px;
 }
 
 .cardBody {
-  font-size: 13.5px;
-  color: rgba(243, 244, 255, 0.72);
+  font-size: 13px;
+  color: var(--muted);
 }
 
 .rolesHeader {
@@ -74,8 +75,8 @@
 }
 
 .rolesNote {
-  font-size: 13px;
-  color: rgba(243, 244, 255, 0.68);
+  font-size: 12px;
+  color: var(--muted);
 }
 
 .rolesGrid {
@@ -104,10 +105,10 @@
 
 .asideTitle {
   margin: 0 0 10px;
-  font-size: 14px;
-  letter-spacing: 0.02em;
+  font-size: 12px;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: rgba(243, 244, 255, 0.78);
+  color: var(--accent);
 }
 
 .list {
@@ -115,26 +116,26 @@
   padding-left: 18px;
   display: grid;
   gap: 8px;
-  color: rgba(243, 244, 255, 0.76);
-  font-size: 14px;
+  color: var(--fg0);
+  font-size: 13px;
 }
 
 .divider {
   height: 1px;
-  background: rgba(243, 244, 255, 0.12);
+  background: var(--border);
   margin: 14px 0;
 }
 
 .creed {
   margin: 0;
   padding: 14px 14px;
-  border-left: 2px solid rgba(148, 163, 184, 0.9);
+  border-left: 2px solid var(--accent);
   border-radius: 0;
   background: transparent;
   display: grid;
   gap: 10px;
-  color: rgba(243, 244, 255, 0.9);
-  font-size: 15px;
-  font-style: italic;
+  color: var(--fg0);
+  font-size: 14px;
+  font-style: normal;
 }
 

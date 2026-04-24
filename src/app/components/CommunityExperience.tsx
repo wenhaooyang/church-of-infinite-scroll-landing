@@ -6,7 +6,7 @@ export function CommunityExperience() {
     <section className="section">
       <div className="container">
         <div className={styles.header}>
-          <h2 className={`${styles.heading} serif`}>What happens inside</h2>
+          <h2 className={`${styles.heading} display`}>What happens inside</h2>
           <p className={styles.subheading}>
             Concrete practices. Shared language. Small experiments that turn doomscrolling into self‑study.
           </p>

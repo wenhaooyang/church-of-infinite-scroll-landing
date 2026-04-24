@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import styles from "./Hero.module.css";
 import { hero, heroCommandments } from "../content";
-import { COMMUNITY_INVITE_URL, CONFESSION_BOOTH_URL } from "../config";
+import { COMMUNITY_INVITE_URL, CONFESSION_BOOTH_PATH } from "../config";
 
 const ROTATE_MS = 4000;
 const FADE_MS = 400;
@@ -38,12 +38,12 @@ export function Hero() {
       <div className="container">
         <div className={styles.inner}>
           <div className="pill">{hero.eyebrow}</div>
-          <h1 className={`${styles.title} serif`}>{hero.title}</h1>
+          <h1 className={`${styles.title} display`}>{hero.title}</h1>
           <p className={styles.subtitle}>{hero.subtitle}</p>
 
           <div className={styles.ctaGroup}>
             <div className={`${styles.primaryCtaRow} buttonRow`}>
-              <a className="btn btnPrimary" href={CONFESSION_BOOTH_URL} target="_blank" rel="noreferrer">
+              <a className={`btn btnPrimary ${styles.confessCta}`} href={CONFESSION_BOOTH_PATH}>
                 {hero.primaryCta}
               </a>
             </div>

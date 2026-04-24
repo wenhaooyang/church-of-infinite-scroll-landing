@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
-import { Inter, Spectral } from "next/font/google";
+import { IBM_Plex_Mono, UnifrakturMaguntia } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
+const ibmPlexMono = IBM_Plex_Mono({
   subsets: ["latin"],
-  variable: "--font-sans",
+  variable: "--font-mono",
   display: "swap",
+  weight: ["400", "500", "600"],
 });
 
-const spectral = Spectral({
+const unifrakturMaguntia = UnifrakturMaguntia({
   subsets: ["latin"],
-  variable: "--font-serif",
-  display: "swap",
-  weight: ["400", "600", "700"],
+  variable: "--font-display",
+  weight: "400",
 });
 
 export const metadata: Metadata = {
@@ -43,7 +43,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${spectral.variable}`}>
+      <body className={`${ibmPlexMono.variable} ${unifrakturMaguntia.variable}`}>
         <a className="skipLink btn" href="#content">
           Skip to content
         </a>

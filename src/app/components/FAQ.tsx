@@ -6,7 +6,7 @@ export function FAQ() {
     <section className="section">
       <div className="container">
         <div className={styles.header}>
-          <h2 className={`${styles.heading} serif`}>FAQ</h2>
+          <h2 className={`${styles.heading} display`}>FAQ</h2>
           <p className={styles.subheading}>A few clarifications before you descend.</p>
         </div>
 

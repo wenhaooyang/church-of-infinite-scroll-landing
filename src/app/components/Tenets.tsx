@@ -6,7 +6,7 @@ export function Tenets() {
     <section className="section">
       <div className="container">
         <div className={styles.header}>
-          <h2 className={`${styles.heading} serif`}>Core beliefs / theology</h2>
+          <h2 className={`${styles.heading} display`}>Core beliefs / theology</h2>
           <p className={styles.subheading}>
             The feed is a mirror. The algorithm is a force. The practice is agency.
           </p>

@@ -13,7 +13,7 @@ const LABELS = [
 export function InfiniteLoopDiagram() {
   const uid = useId().replace(/:/g, "");
   const markerId = `loopArrowhead-${uid}`;
-  const gradId = `loopStroke-${uid}`;
+  const strokeColor = "#d4a843";
   const labelRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
@@ -73,46 +73,41 @@ export function InfiniteLoopDiagram() {
                   orient="auto"
                   markerUnits="strokeWidth"
                 >
-                  <polygon points="0 0, 10 3.5, 0 7" fill="rgba(34, 211, 238, 0.75)" />
+                  <polygon points="0 0, 10 3.5, 0 7" fill={strokeColor} />
                 </marker>
-                <linearGradient id={gradId} x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stopColor="rgba(34, 211, 238, 0.55)" />
-                  <stop offset="50%" stopColor="rgba(168, 85, 247, 0.5)" />
-                  <stop offset="100%" stopColor="rgba(34, 211, 238, 0.55)" />
-                </linearGradient>
               </defs>
               <g transform="translate(200,200)">
                 <g className={styles.spin}>
                   <path
                     d="M 0 -140 A 140 140 0 0 1 140 0"
                     fill="none"
-                    stroke={`url(#${gradId})`}
-                    strokeWidth="2.25"
-                    strokeLinecap="round"
+                    stroke={strokeColor}
+                    strokeWidth="2"
+                    strokeLinecap="butt"
                     markerEnd={`url(#${markerId})`}
                   />
                   <path
                     d="M 140 0 A 140 140 0 0 1 0 140"
                     fill="none"
-                    stroke={`url(#${gradId})`}
-                    strokeWidth="2.25"
-                    strokeLinecap="round"
+                    stroke={strokeColor}
+                    strokeWidth="2"
+                    strokeLinecap="butt"
                     markerEnd={`url(#${markerId})`}
                   />
                   <path
                     d="M 0 140 A 140 140 0 0 1 -140 0"
                     fill="none"
-                    stroke={`url(#${gradId})`}
-                    strokeWidth="2.25"
-                    strokeLinecap="round"
+                    stroke={strokeColor}
+                    strokeWidth="2"
+                    strokeLinecap="butt"
                     markerEnd={`url(#${markerId})`}
                   />
                   <path
                     d="M -140 0 A 140 140 0 0 1 0 -140"
                     fill="none"
-                    stroke={`url(#${gradId})`}
-                    strokeWidth="2.25"
-                    strokeLinecap="round"
+                    stroke={strokeColor}
+                    strokeWidth="2"
+                    strokeLinecap="butt"
                     markerEnd={`url(#${markerId})`}
                   />
                 </g>

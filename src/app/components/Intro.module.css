@@ -4,14 +4,14 @@
 
 .heading {
   margin: 0 0 14px;
-  font-size: clamp(28px, 3.2vw, 40px);
-  line-height: 1.12;
-  letter-spacing: -0.015em;
+  font-size: clamp(28px, 3.4vw, 42px);
+  line-height: 1.1;
+  letter-spacing: 0.02em;
 }
 
 .copy {
-  color: rgba(243, 244, 255, 0.78);
-  font-size: 16px;
+  color: var(--fg0);
+  font-size: 15px;
 }
 
 .copy p {
