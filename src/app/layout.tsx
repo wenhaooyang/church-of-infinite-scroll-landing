@@ -44,6 +44,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: `if(window.location.hostname==='church-of-infinite-scroll-landing.vercel.app'){window.location.replace('https://www.churchofscroll.com'+window.location.pathname+window.location.search);}` }} />
+      </head>
       <body className={`${ibmPlexMono.variable} ${playfairDisplay.variable}`}>
         <a className="skipLink btn" href="#content">
           Skip to content
