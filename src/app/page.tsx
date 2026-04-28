@@ -14,7 +14,7 @@ export default function Home() {
         <div className={`${styles.actions} ${styles.reveal3}`}>
           <a
             className={`${styles.cta} ${styles.ctaPrimary}`}
-            href="https://church-of-infinite-scroll-booth.vercel.app/confess"
+            href="https://confess.churchofscroll.com"
           >
             Enter the Confession Booth &rarr;
           </a>
@@ -42,7 +42,7 @@ export default function Home() {
       <footer className={`${styles.footer} ${styles.reveal7}`}>
         <p>&quot;We do not worship the Feed. We have simply accepted it as inevitable.&quot;</p>
         <div className={styles.footerLinks}>
-          <a href="https://church-of-infinite-scroll-booth.vercel.app/confess">Confession Booth</a>
+          <a href="https://confess.churchofscroll.com">Confession Booth</a>
           <span aria-hidden="true">·</span>
           <a href={COMMUNITY_INVITE_URL}>Discord</a>
         </div>
